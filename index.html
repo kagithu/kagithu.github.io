@@ -3,82 +3,69 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>kagithu.github.io</title>
-  <style>
-    :root {
-      color-scheme: dark;
-      --bg: #0f1c2e;
-      --panel: #1b2f4a;
-      --line: #7ec8ff;
-      --text: #e8f7ff;
-      --accent: #ffe480;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      padding: 16px;
-      background:
-        repeating-linear-gradient(
-          0deg,
-          rgba(255, 255, 255, 0.02),
-          rgba(255, 255, 255, 0.02) 1px,
-          transparent 1px,
-          transparent 3px
-        ),
-        radial-gradient(circle at top, #2a4c76, var(--bg) 45%);
-      color: var(--text);
-      font-family: "Courier New", Courier, monospace;
-    }
-
-    main {
-      width: min(720px, 100%);
-      border: 3px solid var(--line);
-      background: var(--panel);
-      box-shadow: 0 0 0 4px #0a1320, 0 0 24px rgba(126, 200, 255, 0.45);
-      padding: 28px 20px;
-    }
-
-    h1 {
-      margin: 0 0 8px;
-      font-size: clamp(1.4rem, 4.2vw, 2.1rem);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--accent);
-      text-shadow: 2px 2px 0 #000;
-    }
-
-    p {
-      margin: 0 0 14px;
-      line-height: 1.7;
-    }
-
-    .badge {
-      display: inline-block;
-      padding: 4px 8px;
-      border: 2px solid var(--line);
-      margin-top: 8px;
-      color: var(--line);
-      font-weight: bold;
-    }
-  </style>
+  <title>kagithu.github.io | ホーム</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <h1>Welcome to kagithu.github.io</h1>
-    <p>
-      懐かしいPC画面をイメージした、レトロデザインのGitHub Pagesです。
-    </p>
-    <p>
-      シンプルな1ページ構成で、今後ここにプロフィールや制作物を追加できます。
-    </p>
-    <span class="badge">RETRO MODE : ON</span>
-  </main>
+  <div class="page">
+    <header class="topbar">Windows XP時代っぽい個人サイトへようこそ！</header>
+    <section class="site-title">
+      <h1>kagithu.github.io</h1>
+      <p>2000年代後半の個人ホームページをイメージしたレトロWebサイトです。</p>
+    </section>
+    <marquee class="flash" behavior="alternate" scrollamount="6">
+      ★ 更新情報 ★ 「プロフィール」「日記」「リンク集」ページを公開しました ★
+    </marquee>
+    <div class="layout">
+      <aside>
+        <section class="panel">
+          <h2>MENU</h2>
+          <ul class="menu">
+            <li><a class="current" href="index.html">トップ</a></li>
+            <li><a href="profile.html">プロフィール</a></li>
+            <li><a href="diary.html">日記</a></li>
+            <li><a href="links.html">リンク集</a></li>
+          </ul>
+        </section>
+        <section class="panel">
+          <h2>カウンター</h2>
+          <p class="counter">0002458</p>
+          <p>あなたは <span class="blink">キリ番</span> を狙っています。</p>
+          <span class="stamp">最終更新: 2026-10-04</span>
+        </section>
+      </aside>
+      <main class="panel main">
+        <h2>おしらせ</h2>
+        <p>
+          ページデザインを全面リニューアルし、MS Pゴシック系フォントを使った
+          当時風レイアウトにしました。
+        </p>
+        <table class="news">
+          <tbody>
+            <tr>
+              <th>2026-10-04</th>
+              <td>トップページを改装。メニューを増設。</td>
+            </tr>
+            <tr>
+              <th>2026-10-04</th>
+              <td>プロフィール・日記・リンク集ページを追加。</td>
+            </tr>
+            <tr>
+              <th>2026-09-30</th>
+              <td>サイト公開開始。</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="buttons">
+          <a class="btn" href="profile.html">プロフィールへ</a>
+          <a class="btn" href="diary.html">日記を読む</a>
+          <a class="btn" href="links.html">リンク集</a>
+        </div>
+      </main>
+    </div>
+    <footer class="footer">
+      <strong>Thanks for visiting!</strong> ブラウザは最新版推奨ですが気分は2000年代後半です。
+    </footer>
+  </div>
 </body>
 </html>
