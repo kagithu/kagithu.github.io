@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>kagithu.github.io</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0f1c2e;
+      --panel: #1b2f4a;
+      --line: #7ec8ff;
+      --text: #e8f7ff;
+      --accent: #ffe480;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 16px;
+      background:
+        repeating-linear-gradient(
+          0deg,
+          rgba(255, 255, 255, 0.02),
+          rgba(255, 255, 255, 0.02) 1px,
+          transparent 1px,
+          transparent 3px
+        ),
+        radial-gradient(circle at top, #2a4c76, var(--bg) 45%);
+      color: var(--text);
+      font-family: "Courier New", Courier, monospace;
+    }
+
+    main {
+      width: min(720px, 100%);
+      border: 3px solid var(--line);
+      background: var(--panel);
+      box-shadow: 0 0 0 4px #0a1320, 0 0 24px rgba(126, 200, 255, 0.45);
+      padding: 28px 20px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.4rem, 4.2vw, 2.1rem);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      text-shadow: 2px 2px 0 #000;
+    }
+
+    p {
+      margin: 0 0 14px;
+      line-height: 1.7;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 4px 8px;
+      border: 2px solid var(--line);
+      margin-top: 8px;
+      color: var(--line);
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Welcome to kagithu.github.io</h1>
+    <p>
+      懐かしいPC画面をイメージした、レトロデザインのGitHub Pagesです。
+    </p>
+    <p>
+      シンプルな1ページ構成で、今後ここにプロフィールや制作物を追加できます。
+    </p>
+    <span class="badge">RETRO MODE : ON</span>
+  </main>
+</body>
+</html>
